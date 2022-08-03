@@ -1,0 +1,31 @@
+.example-card {
+    max-width: 400px;
+}
+
+.example-card {
+    max-width: 400px;
+}
+
+.highlighted {
+    border: 1px solid red;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
