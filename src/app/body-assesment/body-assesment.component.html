@@ -1,7 +1,9 @@
-<button mat-button color="primary" (click)="startAssesment()">Start Assesment</button>
+<div class="centerPanel">
+  <button mat-icon-button color="primary" *ngIf="!startBodyAssesment" (click)="startAssesment()"><mat-icon>mic</mat-icon></button>
+  <button mat-icon-button color="accent" *ngIf="startBodyAssesment" (click)="submitAssesment()"><mat-icon>mic</mat-icon></button>
 
 <mat-card class="example-card" [ngClass]="{'blink_me': startBodyAssesment}">
-    <h1>Inner Body Assesment</h1>
+    <h1>Living Habit Assesment</h1>
     <form class="example-form">
       <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>Bowel</mat-label>
@@ -22,4 +24,4 @@
     </form>
   </mat-card>
 
-  <button mat-button color="primary" (click)="submitAssesment()">Submit</button>
+</div>
