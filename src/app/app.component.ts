@@ -8,11 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'HackathonPOC';
+  title = 'OVA';
   
-
-  
-
   ngOnInit() {
     
   }

@@ -17,11 +17,9 @@ export class VoiceRecognitionService {
   constructor() { }
 
   init() {
-
     this.recognition.interimResults = false;
     this.recognition.lang = 'en-US';
     this.sentence = [];
-
     this.recognition.addEventListener('result', (e) => {
       const transcript = Array.from(e.results)
         .map((result) => result[0])
@@ -57,5 +55,9 @@ export class VoiceRecognitionService {
   wordConcat() {
     this.text = this.text + ' ' + this.tempWords + '.';
     this.tempWords = '';
+  }
+
+  abort() {
+    this.recognition.abort();
   }
 }
